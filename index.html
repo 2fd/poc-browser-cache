@@ -1,0 +1,27 @@
+<script>
+  navigator && navigator.serviceWorker && navigator.serviceWorker.register("/sw.js", { scope: "/", });
+</script>
+
+<script>
+
+  Promise.resolve()
+    /** Load files with KB jumps files */
+    // .then(async () => {
+    //     const FROM = 1
+    //     const TO = 0
+    //     for (let i = FROM; i<=TO; i += 1) {
+    //       const r = await fetch(`./temp_${i}k.tmp`)
+    //       await r.text()
+    //     }
+    //   })
+
+    /** Load files with MB jumps files */
+    .then(async () => {
+        const FROM = 35
+        const TO = 45
+        for (let i = FROM; i<=TO; i += 1) {
+          const r = await fetch(`./temp_${i}m.tmp`)
+          await r.text()
+        }
+      })
+</script>

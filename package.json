@@ -1,0 +1,17 @@
+{
+  "name": "test-cache",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "files:create": "bash mkfiles.sh",
+    "files:clear": "rm -rf *.tmp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
