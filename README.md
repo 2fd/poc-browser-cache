@@ -6,7 +6,7 @@ This Proof Of Concept creates and serve files with arbitrary sizes to test that 
 
 > Please Note: this test is intended to run on *MacOS*, may not work in a different OS.
 
-&nbsp;
+  &nbsp;
 
 ## Running the PoC
 
@@ -20,15 +20,15 @@ Once you have NodeJS run the following command to create all dummy files
 
 > Note 1: Edit `./mkfiles.sh` if you want to change the size of the files
 
-&nbsp;
+  &nbsp;
 
 > Note 2: Edit `index.html` to test which sizes will you test, don't load all because you can be reach the total max size of the cache at that point you browser will select which cache is keeping using a different algorithm that is outside the scope of this PoC
 
-&nbsp;
+  &nbsp;
 
 > Note 3: After you finish use the command `npm files:clear` to remove all dummy files to clear up to **5Gb** of disk
 
-&nbsp;
+  &nbsp;
 
 ### Testing Browser Cache
 
@@ -50,11 +50,11 @@ Reload the page to check which files were cached
 
 To enabled the Service Worker Cache just edit `./sw.js` and uncomment the [line 25](./sw.js#L25). Then reload the page twice, the first reload will cache all files in the service worker and the second will show which files are cached
 
-&nbsp;
+  &nbsp;
 
-&nbsp;
+  &nbsp;
 
-&nbsp;
+  &nbsp;
 
 ## Conclusions
 
